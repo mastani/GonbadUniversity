@@ -178,7 +178,8 @@
 
             <div id="case" class="tab-pane fade">
                 <br/>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#file">افزودن پرونده</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#file">افزودن پرونده
+                </button>
                 <div id="file" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -186,8 +187,36 @@
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h4 class="modal-title">افزودن پرونده جدید</h4>
                             </div>
-                            <div class="modal-body">
-                                <p>Some text in the modal.</p>
+                            <div class="modal-body" style="margin-right: 20px; margin-left: 40px;">
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="title">عنوان</label>
+                                    <input type="text" class="col-sm-10 form-control" id="title">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="subject">موضوع</label>
+                                    <input type="text" class="col-sm-10 form-control" id="subject">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="detail">شرح</label>
+                                    <textarea rows="6" class="col-sm-10 form-control" id="detail"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="file_type">نوع سند</label>
+                                    <input type="text" class="col-sm-10 form-control" id="file_type">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="file_sort">طبقه بندی</label>
+                                    <input type="text" class="col-sm-10 form-control" id="file_sort">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2" for="attachment">پیوست</label>
+                                    <button type="button" class="btn btn-primary" id="attachment">افزودن پیوست</button>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-success" data-dismiss="modal">افزودن</button>
