@@ -6,11 +6,10 @@
         <li><a data-toggle="pill" href="#case">پرونده</a></li>
     </ul>
 
-    <form class="form-horizontal" role="form">
+    <form method="post" action="" class="form-horizontal" role="form">
         <div class="tab-content">
             <div id="info" class="tab-pane fade in active">
                 <br/>
-                <legend>مشخصات</legend>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -134,7 +133,6 @@
             </div>
             <div id="info_more" class="tab-pane fade">
                 <br/>
-                <legend>مشخصات تکمیلی</legend>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -152,7 +150,14 @@
                     </div>
 
                     <div class="col-md-6">
-
+                        <div class="form-group">
+                            <div class="col-sm-9 ename-container"></div>
+                            <label class="col-sm-3" for="ename">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9 efamily-container"></div>
+                            <label class="col-sm-3" for="efamily">Family</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,9 +177,43 @@
             </div>
 
             <div id="case" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                    explicabo.</p>
+                <br/>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#file">افزودن پرونده</button>
+                <div id="file" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">افزودن پرونده جدید</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">افزودن</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">لغو</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br/><br/>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>شماره نامه</th>
+                        <th>عنوان</th>
+                        <th>موضوع</th>
+                        <th>پیوست</th>
+                        <th>تاریخ ثبت</th>
+                        <th>نوع سند</th>
+                        <th>طبقه بندی</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </form>

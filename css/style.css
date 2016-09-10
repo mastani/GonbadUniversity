@@ -26,6 +26,10 @@ body {
     color: red;
 }
 
+label {
+    margin-top: 7px;
+}
+
 #imagePreview {
     background-image: url('../images/no-profile.png');
     width: 200px;
