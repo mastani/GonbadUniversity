@@ -20,6 +20,7 @@ $('#rtl-support .typeahead').typeahead(null, {
         suggestion: Handlebars.compile('<div><strong>{{value}}</strong> – {{label}}</div>')
     }
 }).bind('typeahead:select', function (ev, suggestion) {
+    $(".search-view").css("visibility", "visible");
     loadData(suggestion.id);
 });
 
@@ -151,5 +152,5 @@ String.prototype.format = function () {
 $(document).ready(function () {
     $("[name='edit-mode']").bootstrapSwitch();
 
-    switchMode(true);
+    switchMode(false);
 });
