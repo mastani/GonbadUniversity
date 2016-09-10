@@ -45,7 +45,13 @@ var values = {
     position: "",
     marriage_status: "",
     role: "",
-    phone: ""
+    phone: "",
+    degree: "",
+    field: "",
+    birth_place: "",
+    religion: "",
+    id_location: "",
+    military_state: ""
 };
 
 var editStructure = "<input type=\"text\" class=\"1 form-control\" id=\"1\" name=\"1\">";

@@ -22,6 +22,9 @@ else {
         case 'Search':
             require 'Search.php';
             break;
+        case 'AddUser':
+            require 'AddUser.php';
+            break;
     }
 }
 require 'Footer.php';
