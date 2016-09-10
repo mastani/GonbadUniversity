@@ -152,5 +152,5 @@ String.prototype.format = function () {
 $(document).ready(function () {
     $("[name='edit-mode']").bootstrapSwitch();
 
-    switchMode(false);
+    switchMode(true);
 });
