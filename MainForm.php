@@ -219,7 +219,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">افزودن</button>
+                                <button type="button" class="add_file btn btn-success" data-dismiss="modal">افزودن
+                                </button>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">لغو</button>
                             </div>
                         </div>
@@ -227,19 +228,20 @@
                     </div>
                 </div>
                 <br/><br/>
-                <table class="table table-hover">
+                <table class="table table-striped">
                     <thead>
                     <tr>
                         <th>شماره نامه</th>
                         <th>عنوان</th>
                         <th>موضوع</th>
-                        <th>پیوست</th>
-                        <th>تاریخ ثبت</th>
+                        <th>شرح</th>
                         <th>نوع سند</th>
                         <th>طبقه بندی</th>
+                        <th>پیوست</th>
+                        <th>تاریخ ثبت</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="list_file">
 
                     </tbody>
                 </table>

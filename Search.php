@@ -4,7 +4,7 @@ defined('ACCESS') or die(header('HTTP/1.1 403 Forbidden'));
 
 <br/><br/>
 
-<div class="row">
+<div class="row" style="margin-right: 20px;">
     <div id="rtl-support">
         <input class="typeahead" type="text" dir="rtl" placeholder="جستجو">
     </div>

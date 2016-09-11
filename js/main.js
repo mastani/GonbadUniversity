@@ -153,4 +153,18 @@ $(document).ready(function () {
     $("[name='edit-mode']").bootstrapSwitch();
 
     switchMode(true);
+
+    $(".add_file").click(function () {
+        $('.list_file').append(
+            '<tr>' +
+            '<td>#</td>' +
+            '<td>' + $('#title').val() + '</td>' +
+            '<td>' + $('#subject').val() + '</td>' +
+            '<td>' + $('#detail').val() + '</td>' +
+            '<td>' + $('#file_type').val() + '</td>' +
+            '<td>' + $('#file_sort').val() + '</td>' +
+            '<td>####</td>' +
+            '<td>#</td>' +
+            '</tr>');
+    });
 });
